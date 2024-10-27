@@ -76,6 +76,7 @@
     --background-message-hover: rgba(4, 4, 5, 0.07);
     --activity-card-background: #202225;
     --textbox-markdown-syntax: rgb(82, 89, 95);
+    --bg-overlay-2: var(--background-primary);
 }
 
 .menu_dc52c6, .body_b9fccc, .container__9f51c, .container_c1519f, .container_cbd271, .members_cbd271, .member_a31c43, .option_b0286e, .searchOption_b0286e, .user__97b4c, .calendarPicker_be05cd {
@@ -104,4 +105,49 @@
     border-left: var(--border);
     border-right: var(--border);
     border-bottom: var(--border);
+}
+
+.theme-dark .content_eed6a8,
+.theme-dark .auto_eed6a8,
+.theme-dark .scrollerBase_eed6a8,
+.theme-dark .list_a6d69a>div:first-child {
+    background: var(--background-primary);
+}
+
+/* style forum cards */
+.container_a57509, .mainCard_a6d69a, .matchingPostsRow_a6d69a {
+    background-color: var(--background-primary) !important;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    margin-bottom: 18px;
+}
+
+.card_a6d69a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 8px;
+    background-color: var(--background-primary);
+}
+
+/* stupid card gradient */
+.theme-dark .textContentFooter_a57509 {
+    background: linear-gradient(
+        to top,
+        var(--background-primary) 0%,
+        var(--background-primary) 36px,
+        rgba(9, 12, 16, 0.4) 100%
+    );
+    margin-bottom: -8px;
+    padding: 28px 6px 6px;
+}
+
+/* fix message hover action picker */
+.buttonsInner_d5deea,
+.popover_e986d9,
+.popoverReactionHoverBar_e986d9,
+.wrapper_f7e168 {
+    background-color: var(--background-floating) !important;
+    border: var(--border);
+    border-radius: var(--border-radius);
 }
